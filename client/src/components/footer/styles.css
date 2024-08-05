@@ -1,0 +1,17 @@
+.footer-main {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background-color: rgb(78, 130, 132);
+  color: white;
+  align-items: center;
+  justify-content: end;
+}
+
+.footer-jr {
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 20px;
+}

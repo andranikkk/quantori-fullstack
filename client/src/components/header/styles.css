@@ -1,0 +1,239 @@
+.header {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.header svg {
+  width: 50px;
+  height: 50px;
+  color: rgb(78, 130, 132);
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.tabs {
+  display: flex;
+  width: 200px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid rgb(78, 130, 132);
+  justify-content: center;
+}
+
+.tabs button {
+  border: none;
+  color: rgb(78, 130, 132);
+  background-color: unset;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tabs a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
+
+.tabs a:hover {
+  color: white;
+}
+
+.tabs button:hover {
+  color: white;
+  background-color: rgb(78, 130, 132);
+  transition: color 0.3s;
+}
+
+.nav-link.active button {
+  background-color: rgb(78, 130, 132);
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link-start.active button {
+  border-radius: 30px 0 0 30px;
+  background-color: rgb(78, 130, 132);
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link-end.active button {
+  border-radius: 0 30px 30px 0;
+  background-color: rgb(78, 130, 132);
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link-start button:hover {
+  border-radius: 30px 0 0 30px;
+  color: white;
+}
+
+.nav-link-end button:hover {
+  border-radius: 0 30px 30px 0;
+  color: white;
+}
+
+.login {
+  padding: 9px 22px;
+  border-radius: 5px;
+  color: white;
+  border: hidden;
+  cursor: pointer;
+  background-color: rgb(78, 130, 132);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-container {
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  color: rgb(78, 130, 132);
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+
+.login-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: rgb(78, 130, 132);
+  color: white;
+}
+
+.cancel-button {
+  background-color: white;
+  color: rgb(78, 130, 132);
+  border: 2px solid rgb(78, 130, 132);
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.cancel-button:hover {
+  background-color: #ff7472;
+  color: white;
+}
+
+.close-button {
+  position: relative;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  border-radius: 30px;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+    border: 1px solid rgb(78, 130, 132);
+    color: rgb(78, 130, 132);
+    border-radius: 5px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid rgb(78, 130, 132);
+    padding: 10px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 10px;
+    display: block;
+  }
+
+  .menu button {
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    color: rgb(78, 130, 132);
+    background-color: unset;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+.right-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+}
